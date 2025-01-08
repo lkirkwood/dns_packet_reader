@@ -1,0 +1,12 @@
+patch = { crates-io = { simple-dns = { path = "/home/lkirkwood/.rhack/simple-dns-0.9.1" } } }
+[package]
+name = "dns_packet_reader"
+version = "0.1.0"
+edition = "2021"
+description = "A tool for inspecting the contents of a DNS packet"
+authors = ["Linus Kirkwood <linuskirkwood@gmail.com>"]
+
+[dependencies]
+clap = { version = "4.5.24", features = ["derive"] }
+hex = "0.4.3"
+simple-dns = "0.9.1"
